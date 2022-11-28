@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 const config = {
   title: "Tailwind CSS Course",
   tagline: "Learn Tailwind CSS in one month",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://tailbook-docusaurus.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
