@@ -13,12 +13,10 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "images/favicon.ico",
-
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
-
   presets: [
     [
       "classic",
@@ -33,10 +31,20 @@ const config = {
       }),
     ],
   ],
-
+  //themes: ["@docusaurus/theme-search-algolia"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: "J8EHHSBUSY",
+        apiKey: "8623da203231a3714bbc435f033aa1db",
+        indexName: "YOUR_INDEX_NAME",
+        contextualSearch: true,
+        externalUrlRegex: "external\\.com|domain\\.com",
+        searchParameters: {},
+        searchPagePath: "search",
+      },
+
       navbar: {
         title: "Site",
         logo: {
@@ -51,8 +59,8 @@ const config = {
             label: "Book",
           },
           {
-            href: "https://bbc.co.uk",
-            label: "BBC",
+            href: "https://cnn.com",
+            label: "CNN",
             position: "right",
           },
         ],
