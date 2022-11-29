@@ -59,9 +59,12 @@ const config = {
             label: "Book",
           },
           {
-            href: "https://cnn.com",
-            label: "CNN",
-            position: "right",
+            label: "Code Editor",
+            href: "https://auth-editor.vercel.app",
+          },
+          {
+            label: "Page builder",
+            href: "https://webpage-builder.netlify.app/",
           },
         ],
       },
@@ -78,7 +81,7 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Resourses",
             items: [
               {
                 label: "Tailwind CSS",
@@ -90,8 +93,12 @@ const config = {
             title: "More",
             items: [
               {
-                label: "BBC",
-                href: "https://bbc.co.uk",
+                label: "Code Editor",
+                href: "https://auth-editor.vercel.app",
+              },
+              {
+                label: "Page builder",
+                href: "https://webpage-builder.netlify.app/",
               },
             ],
           },
