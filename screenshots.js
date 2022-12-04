@@ -125,13 +125,18 @@ puppeteer.launch().then(async (browser) => {
   )
   await page.screenshot({ path: "screenshots/15.png", fullPage: true })
 
+  await page.click(
+    ".col > .docItemContainer_node_modules-\\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module > .pagination-nav > .pagination-nav__link--next > .pagination-nav__label"
+  )
+  await page.screenshot({ path: "screenshots/16.png", fullPage: true })
+
   await page.waitForSelector(".row > .col:nth-child(1) > .footer__items > .footer__item > .footer__link-item")
   await page.click(".row > .col:nth-child(1) > .footer__items > .footer__item > .footer__link-item")
-  await page.screenshot({ path: "screenshots/16.png", fullPage: true })
+  await page.screenshot({ path: "screenshots/17.png", fullPage: true })
 
   await page.waitForSelector("#__docusaurus > .navbar > .navbar__inner > .navbar__items > .navbar__item:nth-child(4)")
   await page.click("#__docusaurus > .navbar > .navbar__inner > .navbar__items > .navbar__item:nth-child(4)")
-  await page.screenshot({ path: "screenshots/17.png", fullPage: true })
+  await page.screenshot({ path: "screenshots/18.png", fullPage: true })
   await navigationPromise
 
   await page.waitForSelector(
@@ -140,11 +145,11 @@ puppeteer.launch().then(async (browser) => {
   await page.click(
     ".navbar__inner > .navbar__items > .toggle_node_modules-\\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module > .clean-btn > .darkToggleIcon_node_modules-\\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module"
   )
-  await page.screenshot({ path: "screenshots/18.png", fullPage: true })
+  await page.screenshot({ path: "screenshots/19.png", fullPage: true })
 
   await page.waitForSelector(".navbar > .navbar__inner > .navbar__items > .navbar__brand > .navbar__title")
   await page.click(".navbar > .navbar__inner > .navbar__items > .navbar__brand > .navbar__title")
-  await page.screenshot({ path: "screenshots/19.png", fullPage: true })
+  await page.screenshot({ path: "screenshots/20.png", fullPage: true })
 
   await browser.close()
 })
