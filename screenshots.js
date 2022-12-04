@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer")
 puppeteer.launch().then(async (browser) => {
   const page = await browser.newPage()
   const navigationPromise = page.waitForNavigation()
-  
+
   await page.goto("http://localhost:3000/")
 
   await page.setViewport({ width: 1440, height: 764 })

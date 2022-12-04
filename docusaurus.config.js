@@ -64,7 +64,15 @@ const config = {
           },
           {
             label: "Page builder",
-            href: "https://webpage-builder.netlify.app/",
+            href: "https://webpage-builder.netlify.app",
+          },
+          {
+            label: "Mockup builder",
+            href: "https://mockupbuilder.netlify.app",
+          },
+          {
+            label: "Banner builder",
+            href: "https://banner-builder.netlify.app",
           },
         ],
       },
@@ -98,7 +106,15 @@ const config = {
               },
               {
                 label: "Page builder",
-                href: "https://webpage-builder.netlify.app/",
+                href: "https://webpage-builder.netlify.app",
+              },
+              {
+                label: "Mockup builder",
+                href: "https://mockupbuilder.netlify.app",
+              },
+              {
+                label: "Banner builder",
+                href: "https://banner-builder.netlify.app",
               },
             ],
           },

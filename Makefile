@@ -6,10 +6,9 @@ help:
 	$(info available commands:)
 	$(info -> setup                  installs dependencies)
 	$(info -> format                 formats source code)
-	$(info -> build                  builds deployable version)
-	$(info -> test                   runs available tests)
 	$(info -> run                    starts application locally)
 	$(info -> screenshots            take screenshots)
+	$(info -> build                  builds deployable version)
 
 .PHONY: setup
 setup:
@@ -19,14 +18,6 @@ setup:
 format:
 	yarn run format
 
-.PHONY: build
-build:
-	yarn run build
-
-.PHONY: test
-test:
-	yarn test
-
 .PHONY: run
 run:
 	yarn start
@@ -34,3 +25,7 @@ run:
 .PHONY: screenshots
 publish:
 	node screenshots.js
+
+.PHONY: build
+build:
+	yarn run build
